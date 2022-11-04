@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+</head>
+
+<body>
+    <div class="topWrapper">
+        <div class="container">
+            <h1 class="mainHEading">Exam Results</h1>
+            <button class="addMembers" id="addNewMember">Add New Student +</button>
+        </div>
+    </div>
+
+    <div class="midWrapper">
+        <div class="container">
+            <h2 class="FormHeading">Filter</h2>
+            <h2 class="tableHeading">Students List</h2>
+            <p class="count">count: <span class="countData"></span></p>
+        </div>
+    </div>
+    <div class="formWrapper">
+        <div class="container">
+            <div class="formRightContents">
+                <label for="Search" id="Search">
+                    Search
+                    <input type="text" placeholder="Falonchi" id="Search" class="form-control">
+                </label>
+                <label for="Mark" id="marks">
+                    mark
+                    <label for="Marks" id="Markinputs">
+                        <input type="number" placeholder="From" id="markFrom" class=" form-control">
+                        <input type="number" placeholder="to" id="markTo" m class=" form-control">
+                    </label>
+                </label>
+                <label for="Sort" class="mt-2">
+                    Sort By
+                    <select id="ratemark" class=" form-control">
+                        <option value="ToHighest">to Highest</option>
+                        <option value="ToLowest">to Lowest</option>
+                    </select>
+                </label>
+                <button class="Filter">Filter</button>
+            </div>
+            <div class="formTableContents">
+                <p class="Avaragemark">Avarage Mark: <span class="AvaragePercentage"></span></p>
+                <table class="table table-hover table-bordered StudentListTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>LastName</th>
+                            <th>Marked Date</th>
+                            <th>Mark</th>
+                            <th>Status</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="wrapper">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-window" id="modalWindow">
+        <div class="modal-card modal-card-close" id="modalCard">
+            <div class="modalTopWrapper">
+                <h2 class="ModalHeading">Add Student</h2>
+                <i class="bi bi-x-square" id="closeModalCard"></i>
+            </div>
+            <div class="adding">
+                <label for="Name" required>
+                    Name
+                    <input type="text" placeholder="Falonchi" class="form-control" id="Name" required>
+                </label>
+                <label for="LastName" required>
+                    Last name
+                    <input type="text" placeholder="Pismadonchi" class="form-control" id="LastName" required>
+                </label>
+                <label for="Mark" required>
+                    mark
+                    <input type="Number" placeholder="150" class="form-control" id="Mark" required>
+                </label>
+                <label for="Mark" required>
+                    Date
+                    <input type="Date" placeholder="Date" class="form-control" id="Date" required>
+                </label>
+                <button class="modalButton" required>Add Student</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/plugin.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

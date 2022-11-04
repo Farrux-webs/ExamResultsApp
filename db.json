@@ -1,0 +1,81 @@
+{
+  "Students": [
+    {
+      "Name": "Farrux",
+      "lastName": "Ravshanbekov",
+      "mark": "86",
+      "Date": "2022-11-23",
+      "id": 1
+    },
+    {
+      "Name": "Firdavs",
+      "lastName": "Yusupov",
+      "mark": "60",
+      "Date": "2022-11-16",
+      "id": 2
+    },
+    {
+      "Name": "Murodjon",
+      "lastName": "Yo'ldoshev",
+      "mark": "75",
+      "Date": "2022-11-17",
+      "id": 3
+    },
+    {
+      "Name": "Solixbek",
+      "lastName": "G'afforov",
+      "mark": "50",
+      "Date": "2022-11-22",
+      "id": 4
+    },
+    {
+      "Name": "Muhammadali",
+      "lastName": "Nigmatov",
+      "mark": "65",
+      "Date": "2022-11-14",
+      "id": 5
+    },
+    {
+      "Name": "Umidjon",
+      "lastName": "Sarmonov",
+      "mark": "80",
+      "Date": "2022-11-21",
+      "id": 6
+    },
+    {
+      "Name": "Jaxongir",
+      "lastName": "Tursunboyev",
+      "mark": "70",
+      "Date": "2022-11-21",
+      "id": 7
+    },
+    {
+      "Name": "HojiAkbar",
+      "lastName": "Ovlakulov",
+      "mark": "80",
+      "Date": "2022-11-21",
+      "id": 8
+    },
+    {
+      "Name": "Abdullajon",
+      "lastName": "Ibrohimov",
+      "mark": "65",
+      "Date": "2022-11-09",
+      "id": 9
+    },
+    {
+      "Name": "Shoxsuvor",
+      "lastName": "Abdusamiyev",
+      "mark": "40",
+      "Date": "2022-11-22",
+      "id": 10
+    },
+    {
+      "Name": "Sanjar",
+      "lastName": "Davletov",
+      "mark": "55",
+      "Date": "2022-11-23",
+      "id": 11
+    }
+  ]
+}
