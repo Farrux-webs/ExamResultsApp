@@ -13,6 +13,8 @@ const getAllData = async () => {
   });
   const data = await response.json();
 
+
+  MarkFrom(data);
   sortData(data);
   searchdata(data)
   dataRender(data);
@@ -257,4 +259,35 @@ function sortData(data = []) {
       });
     }
   });
+}
+
+
+
+
+function MarkFrom(data = []){
+  $("#markFrom").addEventListener('change', (evt)=>{
+     data.forEach((e) => {
+
+      if(evt.target.value > e.mark){
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+            <td>${e.id}</td>
+            <td>${e.Name}</td>
+            <td>${e.lastName}</td>
+            <td>${e.Date}</td></td>
+            <td>${e.mark}</td>
+            <td>${e.mark >= 70 ? "Passed" : "Failed"}</td>
+            <td><i class="bi bi-pencil-square" id="editData"  data-edit = "${
+              e.id
+            }"></i></td>
+            <td><i class="bi bi-trash3-fill" id="deleteData" data-del = "${
+              e.id
+            }"></i></td>
+        `;
+
+            $(".wrapper").appendChild(tr);
+            $(".countData").innerHTML = data.length;
+      }
+  });
+})
 }
