@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start-json-server": "json-server -p 8080 -w db.json"
+    "start-json-server": "json-server -w db.json -p 8080"
   },
   "devDependencies": {
     "vite": "^3.1.3"

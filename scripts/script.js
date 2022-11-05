@@ -174,8 +174,15 @@ function searchdata(data = []){
       $(".wrapper").innerHTML = `<span class="loader"></span>`;
       setTimeout((time) => {
           
-           if (e.Name.toLowerCase().includes(evt.target.value.toLowerCase().trim()) || evt.target.value.trim() == e.lastName) {
-            $('.loader').classList.add('d-none')
+           if (
+             e.Name.toLowerCase().includes(
+               evt.target.value.toLowerCase().trim()
+             ) ||
+             e.lastName.toLowerCase().includes(
+               evt.target.value.toLowerCase().trim()
+             )
+           ) {
+             $(".loader").classList.add("d-none");
              const tr = document.createElement("tr");
              tr.innerHTML = `
             <td>${e.id}</td>
