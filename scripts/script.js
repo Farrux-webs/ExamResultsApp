@@ -170,11 +170,12 @@ $("#closeModalCard").addEventListener("click", (e) => {
 function searchdata(data = []){
   data.forEach((e)=>{
     $("#Search").addEventListener('keyup', (evt)=>{
-      console.log(evt.target.value);
       $(".wrapper").innerHTML = ''
-      if(evt.keyCode == 13){
-        setTimeout((time) => {
-           if (evt.target.value.trim() == e.Name || evt.target.value.trim() == e.lastName) {
+      $(".wrapper").innerHTML = `<span class="loader"></span>`;
+      setTimeout((time) => {
+          
+           if (e.Name.toLowerCase().includes(evt.target.value.toLowerCase().trim()) || evt.target.value.trim() == e.lastName) {
+            $('.loader').classList.add('d-none')
              const tr = document.createElement("tr");
              tr.innerHTML = `
             <td>${e.id}</td>
@@ -194,8 +195,7 @@ function searchdata(data = []){
              $(".wrapper").appendChild(tr);
              $(".countData").innerHTML = data.length;
            }
-        }, '700');
-      }
+        }, '800 ');
     })
   })
 }
